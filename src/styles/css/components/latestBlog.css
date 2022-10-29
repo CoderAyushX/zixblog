@@ -1,0 +1,52 @@
+/************ latest blogs ************/
+
+.grid-box {
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+
+
+.grid-box .img {
+  width: 100%;
+  height: 55%;
+}
+.grid-box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-box .text {
+  padding: 8px;
+}
+.grid-box .text h2 {
+  font-size: 18px;
+  color: #2e2e2e;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.grid-box .text p {
+  font-size: 14px;
+  color: #454545;
+}
+.grid-box .text button {
+  background: #dd16bb;
+  background: -webkit-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: -moz-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: linear-gradient(to bottom right, #dd16bb, #cd67d3);
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 20px 0 5px;
+}
+.grid-box .text button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.grid-box .text button p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}

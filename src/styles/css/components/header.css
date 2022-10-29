@@ -1,0 +1,110 @@
+/************ nav ************/
+nav {
+  width: 100%;
+  
+}
+nav .container {
+  max-width: 1150px;
+
+  margin: auto;
+  padding: 12px 0;
+  margin-top: 12px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/************ logo ************/
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo-box p {
+  font-size: 28px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(top left, #dd16bb, #cd67d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo {
+  height: 40px;
+}
+
+/************ nav links ************/
+
+.nav-link-box ul {
+  list-style-type: none;
+}
+
+.nav-link-box ul li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.Link {
+  text-decoration: none;
+  color: black;
+}
+.nav-link-box ul li::before {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  background: #dd16bb;
+  height: 3px;
+  width: 0%;
+  transition: 0.5s;
+}
+.nav-link-box ul li:hover::before {
+  width: 60%;
+}
+/************ button ************/
+nav button {
+  background: #dd16bb;
+  background: -webkit-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: -moz-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: linear-gradient(to bottom right, #dd16bb, #cd67d3);
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+nav button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+nav button p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/****************Responsive****************/
+@media only screen and (max-width: 600px){
+  nav .container{
+    padding: 12px;
+    position: relative;
+  }
+  nav .container .nav-link-box ul {
+    position: absolute;
+  
+    top: 60px;
+    right: 12px;
+    display: grid;
+    place-items: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+  }
+  nav .container .nav-link-box ul li{
+    display: block;
+    margin: 0 0 10px;
+  }
+  
+}

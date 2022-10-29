@@ -1,0 +1,283 @@
+.blog {
+  width: 100%;
+}
+
+.blog .cats {
+  max-width: 1150px;
+
+  margin: 50px auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .cats .box {
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  color: #2a2a2a;
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  font-weight: 500;
+  transition: 0.8s;
+  transform: translateY(-20px);
+}
+.blog .cats .box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* hero */
+
+.blog-hero {
+  max-width: 1150px;
+  margin: 50px auto 80px auto;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/**************** hero childs*************/
+.blog-hero .box {
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.blog-hero .first-box {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/04/New-year-new-phone-Top-5-smartphones-to-launch-in-2022-scaled.jpg?fit=2560%2C1440&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  overflow: hidden;
+  min-width: 0;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/*************** other box**************/
+.blog-hero .box .img {
+  width: 100%;
+  height: 60%;
+}
+.blog-hero .box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-hero .box .text {
+  padding: 8px;
+}
+.blog-hero .box .text h2 {
+  font-size: 16px;
+  color: #2e2e2e;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.blog-hero .box .text button {
+  border: none;
+  background: #fff;
+}
+
+.blog-hero .box .text button p {
+  color: #dd16bb;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*************** first box **************/
+.blog-hero .first-box .box {
+  color: white;
+  text-align: center;
+}
+
+.blog-hero .first-box .box button {
+  background: #dd16bb;
+  background: -webkit-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: -moz-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: linear-gradient(to bottom right, #dd16bb, #cd67d3);
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.blog-hero .first-box .box button p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/************ our blogs*********/
+.our-blogs {
+  max-width: 1150px;
+
+  margin: 0px auto 20px auto;
+  display: flex;
+  height: 700px;
+}
+.ob-box-1 {
+  flex: 2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 0 25px 0 0;
+  background: #eaf0f6;
+}
+.ob-box-1 .image {
+  height: 75%;
+}
+.ob-box-1 .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ob-box-1 .text {
+  padding: 5px 20px;
+  color: #2e475d;
+}
+.ob-box-1 h2 {
+  margin-top: 8px;
+ 
+  width: 90%;
+  font-size: 26px;
+}
+.ob-box-1 p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 25px 0;
+}
+.ob-box-1 span {
+  margin: 0 8px;
+}
+.ob-box-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.most-p {
+  flex: 1;
+}
+
+.editor-p {
+  flex: 1;
+}
+.most-p .head,
+.editor-p .head {
+  height: 30px;
+  width: 55%;
+  background: #dd16bb;
+  background: -webkit-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: -moz-linear-gradient(top left, #dd16bb, #cd67d3);
+  background: linear-gradient(to bottom right, #dd16bb, #cd67d3);
+  font-size: 10px;
+  font-weight: 400;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
+  padding: 0 10px;
+}
+
+
+/********** 9 blogs**********/
+
+.nine-blog{
+  max-width: 1150px;
+  margin: 80px auto;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-rows: repeat(1, 300px);
+  grid-auto-rows: 300px;
+  justify-content: center;
+}
+
+.nine-blog .nine-box{
+  overflow: hidden;
+  min-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  background: #eaf0f6;
+  transition: .5s;
+}
+.nine-blog .nine-box:hover{
+  transform: translateY(-8px);
+}
+.nine-box  .img {
+  width: 100%;
+  height: 60%;
+}
+.nine-box  .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nine-box .text{
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+
+}
+.nine-box .text p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.nine-box .text h2{
+  color: #2e475d;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+/************Responsive***********/
+@media only screen and (max-width: 600px){
+
+  .blog-hero {
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    padding: 0 12px;
+  
+  }
+  
+
+  .blog-hero .first-box {
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .blog .cats{
+    display: none;
+  }
+  .our-blogs {
+
+  
+   flex-direction: column;
+    height: auto;
+    padding: 0 12px;
+  }
+  .ob-box-1 {
+    flex: 0 1 auto;
+    margin: 0 0 40px;
+  }
+
+  .ob-box-2 {
+    flex: 0 1 auto;
+  }
+}

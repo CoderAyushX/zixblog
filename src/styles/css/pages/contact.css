@@ -1,0 +1,92 @@
+.contact {
+  width: 100%;
+}
+.c-box {
+  max-width: 950px;
+  margin: 80px auto 0 auto;
+}
+.c-box p,
+.c-box label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.c-box h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.c-box .div-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.c-box .div-1 div {
+  flex: 1;
+  padding: 10px;
+}
+.c-box .div-1 input {
+  width: 100%;
+  height: 40px;
+  border:1px solid #afafaf;
+}
+
+.c-box .div-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.c-box .div-2 div {
+  flex: 1;
+  padding: 10px;
+}
+.c-box .div-2 select {
+  width: 100%;
+  height: 40px;
+  border:1px solid #afafaf;
+}
+
+.c-box .div-3 {
+  padding: 10px;
+}
+
+.c-box .div-3 textarea {
+  width: 100%;
+  border:1px solid #afafaf;
+}
+.c-box input {
+  display: block;
+}
+.c-box select {
+  display: block;
+}
+.c-box input,
+.c-box textarea,
+.c-box select {
+  margin-top: 5px;
+  padding: 5px;
+}
+/*********hover************/
+.c-box input:hover,
+.c-box textarea:hover,
+.c-box select:hover {
+  border: 1px solid black;
+}
+/********* button*********/
+.c-box button {
+  background: #dd16bb;
+
+  height: 40px;
+  width: 45%;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+.c-box button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.c-box button p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

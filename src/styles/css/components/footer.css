@@ -1,0 +1,143 @@
+.footer {
+  width: 100%;
+  background: #120b1a;
+}
+.footer .container {
+  height: 492px;
+  max-width: 1150px;
+  padding: 50px 0;
+  margin: auto;
+}
+.box-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: 336px;
+}
+.box-box .box-1 {
+  width: 446px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-box .box-2 {
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 5px;
+}
+
+/************ logo ************/
+.box-box .logo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box-box .logo-box p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 6px;
+  background: -webkit-linear-gradient(top left, #dd16bb, #cd67d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box-box .logo {
+  height: 28px;
+}
+
+/******************box 1***************/
+.box-box .box-1 .p {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 20px 0 45px;
+  color: #fff;
+  line-height: 32px;
+}
+.box-1 div {
+  display: flex;
+  flex-direction: row;
+}
+.box-1 div .follow {
+  font-weight: 600;
+  margin-right: 7.5px;
+  color: #fff;
+}
+.box-1 div .social {
+  display: flex;
+  flex-direction: row;
+}
+.box-1 div .social .img {
+  width: 20px;
+  margin: 0 10px 0 0;
+}
+.box-1 .contact {
+  font: 14px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #fff;
+}
+/************* box 2***********/
+.box-2 div ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+.box-2 div h2 {
+  color: #eb427e;
+  font-size: 20px;
+}
+.box-2 div ul li {
+  font: 16px;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+/***********down box***********/
+.box-box-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22.5px;
+  color: #fff;
+}
+.st-box {
+  font: 14px;
+  font-weight: bold;
+}
+.st-box p span {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0 10px;
+  color: #5a4bda;
+}
+.box-box-2 .nd-box p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*****************Responsive*************/
+@media only screen and (max-width: 600px){
+  .footer .container{
+    height: auto;
+    padding: 50px 12px;
+  }
+  .box-box{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .box-box .box-1 {
+    width: auto;
+  }
+  .box-box .box-2 {
+    width: auto;
+  }
+  .box-box-2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-box-2 .st-box{
+    margin-bottom: 20px;
+  }
+}

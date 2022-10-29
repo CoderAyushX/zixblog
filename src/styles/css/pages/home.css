@@ -1,0 +1,135 @@
+/************ hero ************/
+
+.hero {
+  width: 100%;
+}
+.hero .container {
+  max-width: 1150px;
+  height: 70vh;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/************ hero text ************/
+
+.hero-text {
+  flex: 1;
+  padding: 50px 0;
+}
+.hero-text h1 {
+  font-size: 42px;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+.hero-text div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0 15px;
+  width: 80%;
+}
+.hero-text p {
+  color: #454545;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/************ hero text ************/
+.hero-img {
+  flex: 1;
+}
+.hero-img img {
+  width: 100%;
+}
+
+/************ company slider ************/
+.company-slider {
+  width: 100%;
+}
+.company-slider .container {
+  max-width: 1150px;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.company-slider .container img {
+  width: 45px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.company-slider .container img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  animation: popup 0.7s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  30% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/************ latest blogs ************/
+
+.latest-blogs {
+  width: 100%;
+}
+.latest-blogs .container {
+  max-width: 1150px;
+  margin: 120px auto;
+}
+.latest-blogs .grid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-auto-rows: 400px;
+  margin-top: 20px;
+  row-gap: 45px;
+  column-gap: 45px;
+  justify-content: center;
+}
+.latest-blogs h1 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+/************Responsive*************/
+@media only screen and (max-width: 600px){
+  .hero .container{
+    padding: 0 12px;
+  }
+  .hero-img{
+    display: none;
+  }
+  .company-slider .container{
+    flex-wrap: wrap;
+    padding: 0 12px;
+  }
+  .company-slider .container img{
+    width: 30px;
+   
+  }
+  .latest-blogs h1{
+    text-align: center;
+  }
+}
