@@ -146,7 +146,7 @@
 }
 .ob-box-1 h2 {
   margin-top: 8px;
- 
+
   width: 90%;
   font-size: 26px;
 }
@@ -187,10 +187,9 @@
   padding: 0 10px;
 }
 
-
 /********** 9 blogs**********/
 
-.nine-blog{
+.nine-blog {
   max-width: 1150px;
   margin: 80px auto;
   gap: 30px;
@@ -201,26 +200,26 @@
   justify-content: center;
 }
 
-.nine-blog .nine-box{
+.nine-blog .nine-box {
   overflow: hidden;
   min-width: 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background: #eaf0f6;
-  transition: .5s;
+  transition: 0.5s;
 }
-.nine-blog .nine-box:hover{
+.nine-blog .nine-box:hover {
   transform: translateY(-8px);
 }
-.nine-box  .img {
+.nine-box .img {
   width: 100%;
   height: 60%;
 }
-.nine-box  .img img {
+.nine-box .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.nine-box .text{
+.nine-box .text {
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -229,46 +228,37 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
-
 }
-.nine-box .text p{
+.nine-box .text p {
   font-size: 14px;
   font-weight: 500;
   color: #868686;
 }
 
-.nine-box .text h2{
+.nine-box .text h2 {
   color: #2e475d;
   margin-top: 6px;
   font-size: 18px;
 }
 
 /************Responsive***********/
-@media only screen and (max-width: 600px){
-
+@media only screen and (max-width: 600px) {
   .blog-hero {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 300px);
     padding: 0 12px;
-  
   }
-  
 
   .blog-hero .first-box {
-
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  .blog .cats{
+  .blog .cats {
     display: none;
   }
   .our-blogs {
-
-  
-   flex-direction: column;
+    flex-direction: column;
     height: auto;
     padding: 0 12px;
   }
@@ -279,5 +269,8 @@
 
   .ob-box-2 {
     flex: 0 1 auto;
+  }
+  .nine-blog {
+    padding: 0 10px;
   }
 }

@@ -125,7 +125,6 @@
   .box-box{
     flex-direction: column;
     height: auto;
-    align-items: center;
   }
   .box-box .box-1 {
     width: auto;

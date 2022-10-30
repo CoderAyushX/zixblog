@@ -28,7 +28,9 @@ const Contact = () => {
 
   const handelSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${baseURL}add/`, contact).then((response) => {showToastMessage()});
+    axios.post(`${baseURL}add/`, contact).then((response) => {
+      showToastMessage();
+    });
   };
 
   return (
