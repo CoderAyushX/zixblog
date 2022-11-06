@@ -246,7 +246,7 @@
   .blog-hero {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(4, 1fr);
     padding: 0 12px;
   }
 
@@ -270,7 +270,7 @@
   .ob-box-2 {
     flex: 0 1 auto;
   }
-  .nine-blog {
-    padding: 0 10px;
+  .nine-blog{
+    margin: 80px 10px;
   }
 }

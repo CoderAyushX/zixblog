@@ -1,6 +1,7 @@
 /************ nav ************/
 nav {
   width: 100%;
+
   
 }
 nav .container {
@@ -134,12 +135,15 @@ nav button p {
   nav .container{
     padding: 12px;
     position: relative;
+    margin-top: 4px;
   }
+
   nav .container .nav-link-box ul {
     position: absolute;
     top: 60px;
     right: 0;
     display: grid;
+    z-index: 1;
     place-items: center;
     background: #fff;
     border-bottom: 2px solid #dd16bb;

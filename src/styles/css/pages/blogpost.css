@@ -294,3 +294,12 @@
   height: 25px;
   left: 25px;
 }
+/****************Responsive****************/
+@media only screen and (max-width: 600px){
+  .blogpost{
+    padding: 20px 10px;
+  }
+  .user-details img{
+    width: auto;
+  }
+}

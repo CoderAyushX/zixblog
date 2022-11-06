@@ -41,6 +41,9 @@ const Home = () => {
             <img src={hero} alt="hero" />
           </div>
         </div>
+        <div className="gr1 __gradient "/>
+        <div className="gr2 __gradient2 "/>
+  
       </main>
 
       {/* company slider */}
